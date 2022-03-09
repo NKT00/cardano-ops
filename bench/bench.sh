@@ -551,7 +551,7 @@ EOF
 }
 
 op_wait_for_nonempty_block() {
-        local prof=$1 now since patience_start patience=200 patience_until now r
+        local prof=$1 now since patience_start patience=400 patience_until now r
         now=$(date +%s)
         since=$now
         patience_start=$(max "$(genesis_systemstart)" $now)
